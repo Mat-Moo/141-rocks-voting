@@ -1,0 +1,29 @@
+{
+	"repoName": "141-rocks-voting",
+	"name": "141.rocks Voting - Song Voting Plugin for Falcon Player",
+	"author": "Matthew Augier",
+	"description": "Add volume boost and song picker allowing for next song",
+	"homeURL": "https://github.com/Mat-Moo/141-rocks-voting",
+	"srcURL": "https://github.com/Mat-Moo/141-rocks-voting.git",
+	"bugURL": "https://github.com/Mat-Moo/141-rocks-voting/issues",
+	"allowUpdates": 1,
+	"versions": [
+		{
+			"minFPPVersion": "6.0.0",
+			"maxFPPVersion": "0",
+			"branch": "master",
+			"sha": "",
+			"platforms": [
+				"Raspberry Pi"
+			],
+			"dependencies": {
+				"plugins": [
+				],
+				"packages": [
+				],
+				"scripts": [
+				]
+			}
+		}
+	]
+}
