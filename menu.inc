@@ -11,14 +11,20 @@
 # entries to display additional menu items such as the 3 items under the
 # help menu in this example template.
 
-$menuEntries = Array(
-	Array(
+$menuEntries = [
+    [
 		'text' => '141-rocks',
 		'type' => 'status',
 		'page' => 'vote.php',
 		'wrap' => 1
-	)
-);
+    ],
+    [
+		'text' => '141-rocks - Debug',
+		'type' => 'status',
+		'page' => 'debug.php',
+		'wrap' => 1
+    ],
+];
 
 ##############################################################################
 # Display the menu entries for this plugin.
