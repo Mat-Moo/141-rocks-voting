@@ -1,6 +1,5 @@
 <?php
-include_once('./common/class.debug.php');
-debug::log('test');
+include_once "./common/onefourone.php";
 
 $script = $argv[0];
 $command = $argv[1];
