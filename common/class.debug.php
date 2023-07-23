@@ -2,17 +2,18 @@
 
 class Debug
 {
-    protected static $logFile = '/tmp/141-rocks-debug.txt';
+    protected string $logFile;
 
-    function __construct()
+    public function __construct(string $logFile)
     {
-        if (! file_exists($logFile)) {
-            touch($logFile);
+        $this->logFile = $logFile;
+        if (! file_exists($this->logFile)) {
+            touch($this->logFile);
         }
     } 
 
-    public static function log($message)
+    public function log(string $message)
     {
-        file_put_contents($logFile, $message);
+        file_put_contents($this->logFile, $message);
     }
 }
