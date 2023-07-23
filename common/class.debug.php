@@ -20,7 +20,7 @@ class Debug
         }
 
         foreach($message as $output) {
-            file_put_contents($this->logFile, $output);
+            file_put_contents($this->logFile, $output, FILE_APPEND);
         }
     }
 }
