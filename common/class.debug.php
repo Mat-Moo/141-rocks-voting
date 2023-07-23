@@ -12,8 +12,15 @@ class Debug
         }
     } 
 
-    public function log(string $message)
+    public function log($message)
     {
-        file_put_contents($this->logFile, $message);
+        if (! is_array($message))
+        {
+            $message = [$message];
+        }
+
+        foreach($message as $output) {
+            file_put_contents($this->logFile, $output);
+        }
     }
 }
