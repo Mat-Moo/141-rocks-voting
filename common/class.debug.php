@@ -4,9 +4,9 @@ class Debug
 {
     protected string $logFile;
 
-    public function __construct(string $logFile)
+    public function __construct()
     {
-        $this->logFile = $logFile;
+        $this->logFile = $_SERVER['HOME'].'/media/logs/141-rocks.php';
         if (! file_exists($this->logFile)) {
             touch($this->logFile);
         }
