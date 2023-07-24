@@ -1,4 +1,7 @@
+#!/usr/bin/php
 <?php
+echo file_put_contents("test.txt","Hello World. Testing!");
+
 include_once "./common/onefourone.php";
 
 $debug->log($_SERVER['SCRIPT_NAME']);
