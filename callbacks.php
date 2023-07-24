@@ -11,7 +11,7 @@ $script = $argv[0];
 $command = $argv[1];
 
 if ($command == "--list") {
-	echo "Media,Playlist";
+	echo "Media\nPlaylist\n";
 	exit(0);
 }
 

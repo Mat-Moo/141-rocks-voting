@@ -1,4 +1,4 @@
 <?php
 // get debug class sorted
-include_once "./common/class.debug.php";
+include_once "./class.debug.php";
 $debug = new debug();
